@@ -1,0 +1,14 @@
+\title{AI Project 2 - Optimization}
+\author{Anna Aladiev}
+\date{03/19/2016}
+\maketitle
+\begin{document}
+	
+	\section{"Local Searches"}
+	
+	Local search is an iterative improvement search that gradually moves from one solution to the next based on a heuristic. This project covered the hill climbing, hill climbing with random restarts, and simulated annealing local searches. Out of the three searches, simulated annealing was most accurate, but hill climbing was more time efficient. 
+	
+	The hill climbing local search took the shortest amount of time to find a minima of an equation. This is because the algorithm focused on its direct neighbors and ended the search shortly after a local minimum was discovered. Hill climbing often runs into issues when searching for solutions locally, especially when on plateaus or ridges. Hill climbing with random restarts is often implemented to optimize the solution. This method returned values much closer to the expected global maxima when compared to the values returned by the normal hill climbing search. The last local search method used was simulated annealing. This method uses a temperature function to predict the probability of a next random move being an optimal move. This search method randomly choses a neighbor, compares the current location to the new location, and only moves with confidence if the acceptance probability of the next move is higher than that of a random probability generator. Since simulated annealing performs random restarts and searches according to a gradually cooling probability function, it was able to accurately determine the global minima coordinates for the functions tested. 
+	
+	\end{document}
+	
